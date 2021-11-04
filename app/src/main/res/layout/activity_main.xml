@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black2"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="218dp"
+        android:layout_height="48dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_email_icon"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="@string/user"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/admin"
+        app:layout_constraintBottom_toTopOf="@+id/txtPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.838"
+        tools:ignore="DuplicateSpeakableTextCheck"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="376dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_lock_icon"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/admin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TextContrastCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnSingIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="@string/login"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword"
+        app:rippleColor="#F60000" />
+
+    <TextView
+        android:id="@+id/lblLoginResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/not_logged_in"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSingIn"
+        app:layout_constraintVertical_bias="0.485" />
+
+    <ImageView
+        android:id="@+id/imgNba"
+        android:layout_width="219dp"
+        android:layout_height="176dp"
+        android:contentDescription="@string/imagennba"
+        app:layout_constraintBottom_toTopOf="@+id/txtUsername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nbafoto" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
